@@ -9,8 +9,6 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Divider
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.draw.clip
@@ -60,7 +58,6 @@ fun AppCard() {
                 .padding(24.dp, 0.dp, 24.dp, 25.dp)
         ) {
             Column(
-
             ) {
                 Row(
                     modifier = Modifier
@@ -273,22 +270,6 @@ fun AppCard() {
                     }
                 }
                 Spacer(modifier = Modifier.height(40.dp))
-                Button(
-                    onClick = { /*TODO*/ },
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(0.dp, 20.dp)
-                        .background(color = Color.Yellow, shape = RoundedCornerShape(20)),
-                    colors = ButtonDefaults.buttonColors(contentColor = Color.Yellow, containerColor = Color.Yellow)
-                ) {
-                    Text(
-                        text = "Install",
-                        color = Color(0xFF050B18),
-                        fontFamily = skModernistFamily,
-                        fontWeight = FontWeight(700),
-                        fontSize = 20.sp,
-                    )
-                }
             }
         }
     }
